@@ -1,16 +1,13 @@
 module.exports = {
-  // Purge works on production env
   content: ['./src/**/*.tsx'],
-  darkMode: false, // or 'media' or 'class'
   theme: {
-    // use default styles of tailwind v1: https://tailwindcss.com/docs/upgrading-to-v2#configure-your-color-palette-explicitly
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
-
       black: '#000',
       white: '#fff',
       gray: {
+        50: '#f8fafc',
         100: '#f7fafc',
         200: '#edf2f7',
         300: '#e2e8f0',
@@ -20,8 +17,10 @@ module.exports = {
         700: '#4a5568',
         800: '#2d3748',
         900: '#1a202c',
+        950: '#0f172a',
       },
       red: {
+        50: '#fff5f5',
         100: '#fff5f5',
         200: '#fed7d7',
         300: '#feb2b2',
@@ -31,8 +30,10 @@ module.exports = {
         700: '#c53030',
         800: '#9b2c2c',
         900: '#742a2a',
+        950: '#5c1818',
       },
       orange: {
+        50: '#fffaf0',
         100: '#fffaf0',
         200: '#feebc8',
         300: '#fbd38d',
@@ -42,8 +43,10 @@ module.exports = {
         700: '#c05621',
         800: '#9c4221',
         900: '#7b341e',
+        950: '#651e16',
       },
       yellow: {
+        50: '#fffff0',
         100: '#fffff0',
         200: '#fefcbf',
         300: '#faf089',
@@ -53,8 +56,10 @@ module.exports = {
         700: '#b7791f',
         800: '#975a16',
         900: '#744210',
+        950: '#5f370e',
       },
       green: {
+        50: '#f0fff4',
         100: '#f0fff4',
         200: '#c6f6d5',
         300: '#9ae6b4',
@@ -64,8 +69,10 @@ module.exports = {
         700: '#2f855a',
         800: '#276749',
         900: '#22543d',
+        950: '#1a4731',
       },
       teal: {
+        50: '#e6fffa',
         100: '#e6fffa',
         200: '#b2f5ea',
         300: '#81e6d9',
@@ -75,8 +82,10 @@ module.exports = {
         700: '#2c7a7b',
         800: '#285e61',
         900: '#234e52',
+        950: '#1d4044',
       },
       blue: {
+        50: '#ebf8ff',
         100: '#ebf8ff',
         200: '#bee3f8',
         300: '#90cdf4',
@@ -86,8 +95,10 @@ module.exports = {
         700: '#2b6cb0',
         800: '#2c5282',
         900: '#2a4365',
+        950: '#1e3a58',
       },
       indigo: {
+        50: '#ebf4ff', 
         100: '#ebf4ff',
         200: '#c3dafe',
         300: '#a3bffa',
@@ -97,8 +108,10 @@ module.exports = {
         700: '#4c51bf',
         800: '#434190',
         900: '#3c366b',
+        950: '#312e59',
       },
       purple: {
+        50: '#faf5ff',
         100: '#faf5ff',
         200: '#e9d8fd',
         300: '#d6bcfa',
@@ -108,8 +121,10 @@ module.exports = {
         700: '#6b46c1',
         800: '#553c9a',
         900: '#44337a',
+        950: '#372a62',
       },
       pink: {
+        50: '#fff5f7',
         100: '#fff5f7',
         200: '#fed7e2',
         300: '#fbb6ce',
@@ -119,6 +134,7 @@ module.exports = {
         700: '#b83280',
         800: '#97266d',
         900: '#702459',
+        950: '#591f47',
       },
     },
     minWidth: {
@@ -151,9 +167,6 @@ module.exports = {
         },
       }),
     },
-  },
-  variants: {
-    extend: {},
   },
   plugins: [require('@tailwindcss/typography')],
 };

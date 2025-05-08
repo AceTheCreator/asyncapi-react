@@ -97,7 +97,7 @@ export const Sidebar: React.FunctionComponent = () => {
   return (
     <SidebarContext.Provider value={{ setShowSidebar }}>
       <div
-        className="burger-menu rounded-full h-16 w-16 bg-white fixed bottom-16 right-8 flex items-center justify-center z-30 cursor-pointer shadow-md bg-teal-500"
+        className="burger-menu rounded-full h-16 w-16 fixed bottom-16 right-8 flex items-center justify-center z-30 cursor-pointer shadow-md bg-teal-500"
         onClick={() => setShowSidebar((prev) => !prev)}
         data-lol={showSidebar}
       >
